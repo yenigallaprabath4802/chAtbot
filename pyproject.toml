@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "e2e-ai-chatbot"
+version = "0.1.0"
+description = ""
+authors = ["KhoiVN", "nguyenkhoi8071@gmail.com"]
+readme = "README.md"
+repository = "https://github.com/vnk8071/E2E-AI-Chatbot"
+# packages = [{include = "**"}] # Use in internal for import packages
+
+[tool.poetry.dependencies]
+python = ">=3.8.1,<4.0"
+gradio = "3.47.1"
+pydantic = "^1"
+gpt4all = "0.2.3"
+pymongo = {extras = ["srv"], version = "^4.3.3"}
+pypdf = "^3.9.0"
+elasticsearch = "^7"
+fastapi = "^0"
+uvicorn = "^0.22.0"
+black = "^23.3.0"
+pre-commit = "^3.4.0"
+flake8 = "^6.1.0"
+isort = "^5.12.0"
+pyupgrade = "^3.15.0"
+pytest = "^7.4.2"
+mypy = "^1.6.0"
+redis = "^5.0.1"
+autopep8 = "^2.0.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.lint.dependencies]
+flake8 = "^6.0.0"
+ruff = "^0.0.249"
+types-toml = "^0.10.8.1"
+types-redis = "^4.3.21.6"
+black = "^23.3.0"

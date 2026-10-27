@@ -1,0 +1,70 @@
+<!doctype html>
+<html
+	lang="en"
+	style="
+		margin: 0;
+		padding: 0;
+		min-height: 100%;
+		display: flex;
+		flex-direction: column;
+	"
+>
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<script>
+			window.__gradio_mode__ = "app";
+			window.iFrameResizer = {
+				heightCalculationMethod: "taggedElement"
+			};
+		</script>
+
+		<script>window.gradio_config = {"auth_required":true,"auth_message":"Please login to access this app","is_space":false,"root":""};</script>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.7/iframeResizer.contentWindow.min.js"
+			async
+		></script>
+		<script type="module" crossorigin src="./assets/index-6e28cf60.js"></script>
+
+	</head>
+
+	<body
+		style="
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			flex-grow: 1;
+		"
+	>
+		<h2 style="text-align: center;">Chat with AI Chatbot 🤖</h2>
+		<gradio-app
+			control_page_title="true"
+			embed="false"
+			eager="true"
+			style="display: flex; flex-direction: column; flex-grow: 1"
+		>
+		</gradio-app>
+		<script>
+			const ce = document.getElementsByTagName("gradio-app");
+			if (ce[0]) {
+				ce[0].addEventListener("domchange", () => {
+					document.body.style.padding = "0";
+				});
+				document.body.style.padding = "0";
+			}
+		</script>
+	</body>
+</html>
